@@ -1,0 +1,24 @@
+{
+  "name": "cypress-testing",
+  "version": "1.0.0",
+  "description": "Automated software testing with Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elgeorsk/cypress-testing.git"
+  },
+  "keywords": [
+    "testing",
+    "cypress",
+    "automation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elgeorsk/cypress-testing/issues"
+  },
+  "homepage": "https://github.com/elgeorsk/cypress-testing#readme"
+}
