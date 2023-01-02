@@ -1,4 +1,4 @@
-describe('E2E Create new payee', { testIsolation: false }, () => {
+describe('E2E Create new payee test scenario', { testIsolation: false }, () => {
     before(function(){
         cy.visit('http://zero.webappsecurity.com/index.html')
         cy.get('#signin_button').click()

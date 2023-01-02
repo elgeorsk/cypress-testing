@@ -42,6 +42,7 @@ Cypress.Commands.add('login', (username, password) => {
     cy.contains('Sign in').click()
 })
 
+// logout function
 Cypress.Commands.add('logout', () => {
     cy.get('.icon-user').click()
     cy.get('#logout_link').click()    
