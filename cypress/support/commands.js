@@ -40,5 +40,9 @@ Cypress.Commands.add('login', (username, password) => {
 
     cy.get('input[type="checkbox"').click()
     cy.contains('Sign in').click()
+})
 
+Cypress.Commands.add('logout', () => {
+    cy.get('.icon-user').click()
+    cy.get('#logout_link').click()    
 })
