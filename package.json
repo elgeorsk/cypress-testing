@@ -4,7 +4,8 @@
   "description": "Automated software testing with Cypress",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   "homepage": "https://github.com/elgeorsk/cypress-testing#readme",
   "dependencies": {
     "cypress": "^12.2.0",
+    "cypress-xpath": "^2.0.1",
     "prettier": "^2.8.1"
   }
 }

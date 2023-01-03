@@ -22,3 +22,6 @@ This cypress project is part of Udemy course - [Automated Software Testing with 
 ### Install Prettier
 > npm install prettier
 > <br/> More information about [Prettier](https://prettier.io/)
+
+### Install Cypress-xpath
+> npm install cypress-xpath
