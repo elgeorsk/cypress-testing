@@ -7,3 +7,7 @@ This cypress project is part of Udemy course - [Automated Software Testing with 
 ## Setting up the CYPRESS-TESTING project
 
 Check [README.md into CYPRESS-TESTING folder.](./CYPRESS-TESTING/README.md)
+
+## Setting up the CYPRESS-ACTIONS project
+
+Check [README.md into CYPRESS-ACTIONS folder.](./CYPRESS-ACTIONS/README.md)
