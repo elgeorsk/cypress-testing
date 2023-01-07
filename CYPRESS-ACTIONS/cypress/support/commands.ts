@@ -35,3 +35,34 @@
 //     }
 //   }
 // }
+
+declare namespace Cypress {
+    interface Chainable {
+        /**
+         * Navigates to the homepage of our application
+         */
+        visitHomePage(): Chainable<Element>
+
+        /**
+         * Navigates to the login page of our application
+         */
+        visitLoginPage(): Chainable<Element>
+
+        /**
+         * Navigates to the feedback page of our application
+         */
+        visitFeedback(): Chainable<Element>
+    }
+}
+
+Cypress.Commands.add('visitHomePage', () => {
+    cy.visit('http://zero.websecurity.com/index.html')
+})
+
+Cypress.Commands.add('visitLoginPage', () => {
+    cy.visit('http://zero.websecurity.com/login.html')
+})
+
+Cypress.Commands.add('visitFeedback', () => {
+    cy.visit('http://zero.websecurity.com/feeback.html')
+})
