@@ -56,13 +56,13 @@ declare namespace Cypress {
 }
 
 Cypress.Commands.add('visitHomePage', () => {
-    cy.visit('http://zero.websecurity.com/index.html')
+    cy.visit('http://zero.webappsecurity.com/index.html')
 })
 
 Cypress.Commands.add('visitLoginPage', () => {
-    cy.visit('http://zero.websecurity.com/login.html')
+    cy.visit('http://zero.webappsecurity.com/login.html')
 })
 
 Cypress.Commands.add('visitFeedback', () => {
-    cy.visit('http://zero.websecurity.com/feeback.html')
+    cy.visit('http://zero.webappsecurity.com/feeback.html')
 })
