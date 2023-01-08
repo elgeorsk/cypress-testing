@@ -1,0 +1,6 @@
+{
+    "name": "MyName",
+    "email": "hello@cypress.io",
+    "subject": "E2E Feedback page test scenario",
+    "comment": "The e2e test scenario run with success"
+}

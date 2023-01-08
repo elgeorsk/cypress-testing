@@ -51,7 +51,7 @@ declare namespace Cypress {
         /**
          * Navigates to the feedback page of our application
          */
-        visitFeedback(): Chainable<Element>
+        visitFeedbackPage(): Chainable<Element>
     }
 }
 
@@ -63,6 +63,6 @@ Cypress.Commands.add('visitLoginPage', () => {
     cy.visit('http://zero.webappsecurity.com/login.html')
 })
 
-Cypress.Commands.add('visitFeedback', () => {
-    cy.visit('http://zero.webappsecurity.com/feeback.html')
+Cypress.Commands.add('visitFeedbackPage', () => {
+    cy.visit('http://zero.webappsecurity.com/feedback.html')
 })
