@@ -8,6 +8,11 @@ This cypress project is part of Udemy course - [Automated Software Testing with 
 
 Check [README.md into CYPRESS-ACTIONS folder.](./CYPRESS-ACTIONS/README.md)
 
+
+## Setting up the CYPRESS-PAGE_OBJECTS project
+
+Check [README.md into CYPRESS-PAGE_OBJECTS folder.](./CYPRESS-PAGE_OBJECTS/README.md)
+
 ## Setting up the CYPRESS-TESTING project
 
 Check [README.md into CYPRESS-TESTING folder.](./CYPRESS-TESTING/README.md)
