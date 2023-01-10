@@ -35,3 +35,56 @@
 //     }
 //   }
 // }
+
+declare namespace Cypress {
+    interface Chainable {
+
+        login(username:string, password:string): Chainable<Element>
+        logout(): Chainable<Element>
+
+        isVisible(selector:string): Chainable<Element>
+        isHidden(selector:string): Chainable<Element>
+        setResolution(size:any): Chainable<Element>
+        
+    }
+}
+
+Cypress.Commands.add('isVisible', selector => {
+    cy.get(selector).should('be.visible')
+})
+
+Cypress.Commands.add('isHidden', selector => {
+    cy.get(selector).should('not.exist')
+})
+
+Cypress.Commands.add('setResolution', size => {
+    if(Cypress._.isArray(size)) {
+        cy.viewport(size[0], size[1])
+    } else {
+        cy.viewport(size)
+    }
+})
+
+//login function
+Cypress.Commands.add('login', (username, password) => {
+
+    cy.get('#user_login').as('username')
+    cy.get('#user_password').as('password')
+
+    cy.clearCookies()
+    cy.clearLocalStorage()
+
+    cy.get('@username').clear()
+    cy.get('@username').type(username)
+    cy.get('@password').clear()
+    cy.get('@password').type(password)
+
+    cy.get('input[type="checkbox"').click()
+    cy.contains('Sign in').click()
+})
+
+// logout function
+Cypress.Commands.add('logout', () => {
+    cy.get('.icon-user').click()
+    cy.get('#logout_link').click()    
+})
