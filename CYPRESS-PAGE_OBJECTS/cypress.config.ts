@@ -3,7 +3,7 @@ import { defineConfig } from "cypress";
 export default defineConfig({
   projectId: '<product_id_cypress_cloud>',
   reporter: 'cypress-mochawesome-reporter',
-  video: true,
+  video: false,
   defaultCommandTimeout: 10000,
   watchForFileChanges: false,
   chromeWebSecurity: false,

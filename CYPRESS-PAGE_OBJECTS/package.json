@@ -6,6 +6,9 @@
   "scripts": {
     "cy:open": "cypress open",
     "cy:run": "cypress run",
+    "cy:chrome": "cypress run --browser chrome",
+    "cy:firefox": "cypress run --browser firefox",
+    "cy:electron": "cypress run --browser electron",
     "cy:dashboard": "cypress run --record --key <key_from_cypress_cloud>"
   },
   "repository": {
