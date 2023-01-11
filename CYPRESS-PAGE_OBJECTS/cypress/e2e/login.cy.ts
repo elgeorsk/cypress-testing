@@ -1,10 +1,11 @@
-import { url, login_username, login_password } from "../../config"
+import { login_username, login_password } from "../../config"
 import Navbar from "../page-objects/components/Navbar"
+import HomePage from "../page-objects/pages/HomePage"
 import LoginPage from "../page-objects/pages/LoginPage"
 
 describe('E2E Login Failed test scenario', { testIsolation:false }, () => {
     before(function(){
-        cy.visit(url)
+        HomePage.load()
         Navbar.clickSignIn()
     })
 
@@ -19,7 +20,7 @@ describe('E2E Login Failed test scenario', { testIsolation:false }, () => {
 
 describe('E2E Login Successfully test scenario', { testIsolation:false }, () => {
     before(function(){
-        cy.visit(url)
+        HomePage.load()
         Navbar.clickSignIn()
     })
 

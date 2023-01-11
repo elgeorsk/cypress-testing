@@ -1,4 +1,5 @@
 export default class BasePage {
+
     static pause(ms:number) {
         cy.wait(ms)
     }
