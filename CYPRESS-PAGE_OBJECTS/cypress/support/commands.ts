@@ -40,7 +40,6 @@ declare namespace Cypress {
     interface Chainable {
 
         login(username:string, password:string): Chainable<Element>
-        logout(): Chainable<Element>
 
         isVisible(selector:string): Chainable<Element>
         isHidden(selector:string): Chainable<Element>
@@ -81,10 +80,4 @@ Cypress.Commands.add('login', (username, password) => {
 
     cy.get('input[type="checkbox"').click()
     cy.contains('Sign in').click()
-})
-
-// logout function
-Cypress.Commands.add('logout', () => {
-    cy.get('.icon-user').click()
-    cy.get('#logout_link').click()    
 })

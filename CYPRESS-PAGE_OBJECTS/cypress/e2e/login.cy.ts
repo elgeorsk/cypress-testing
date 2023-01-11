@@ -28,6 +28,7 @@ describe('E2E Login Successfully test scenario', { testIsolation:false }, () => 
     })
 
     it('should logout sucessfully from the application', () => {
-        cy.logout()
+        Navbar.logout()
+        Navbar.displaySignInBtn()
     })
 })
