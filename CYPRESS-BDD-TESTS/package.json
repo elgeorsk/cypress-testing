@@ -1,0 +1,38 @@
+{
+  "name": "cypress-bdd-tests",
+  "version": "1.0.0",
+  "description": "Automated software testing with Cypress - BDD Tests",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elgeorsk/cypress-testing.git"
+  },
+  "keywords": [
+    "testing",
+    "cypress",
+    "automation",
+    "BDD",
+    "Cucumber",
+    "Gherkin"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elgeorsk/cypress-testing/issues"
+  },
+  "homepage": "https://github.com/elgeorsk/cypress-testing#readme",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.1.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
+    "@jridgewell/sourcemap-codec": "^1.4.14",
+    "@rollup/plugin-inject": "^5.0.3",
+    "cypress": "^12.3.0",
+    "prettier": "^2.8.2",
+    "typescript": "^4.9.4"
+  }
+}
