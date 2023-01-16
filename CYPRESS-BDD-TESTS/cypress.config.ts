@@ -1,7 +1,7 @@
 import { defineConfig } from "cypress";
+import * as createBundler from "@bahmutov/cypress-esbuild-preprocessor";
 import { addCucumberPreprocessorPlugin } from "@badeball/cypress-cucumber-preprocessor";
 import createEsbuildPlugin from "@badeball/cypress-cucumber-preprocessor/esbuild";
-import createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
 
 export default defineConfig({
   e2e: {
